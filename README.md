@@ -50,7 +50,7 @@ Before you begin, make sure you have the following prerequisites installed on yo
 
 ### 2. Working with Packages
 
-- [Creating a ROS 2 Package](docs/create_package.md)
+- [Creating a ROS 2 Package](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)
 - [Building and Sourcing Your Workspace](docs/build_workspace.md)
 - [Running a ROS 2 Node](docs/run_node.md)
 
