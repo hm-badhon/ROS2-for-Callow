@@ -1,0 +1,49 @@
+
+########
+ros2 run demo_nodes_cpp talker
+ros2 run demo_nodes_cpp listener
+rqt_graph
+
+########
+ros2 run turlesim turtlesim_node
+ros2 run turtlesim turtle_teleop_key
+rqt_graph
+
+sudo apt install python3-colcon-common-extensions
+
+# gedit bashrc
+
+add
+source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
+save it
+
+##########
+source ~/.bashrc
+
+apply all the terminal 
+
+
+######
+mkdir ros2_work_space
+cd ros2_work_space
+mkdir src
+colcon build
+
+
+#####
+cd
+source ~/ros2_ws/install/setup.bash
+
+add
+gedit .bashrc
+
+
+# how to create  a package
+cd src
+ros2 pkg create my_robot_control --build-type ament_python --dependencies rclpy
+ros2 pkg create my_robot_control --build-type ament_cmake
+
+## vs code add with ros2
+##### sudo snap install code --classic
+code .
+
